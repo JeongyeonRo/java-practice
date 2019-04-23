@@ -4,11 +4,9 @@ import java.util.Arrays;
 
 public class pagingGame {
 
-	public static void main(String[] args) {
-		int[] pobi = new int[2];
-		int[] crong = new int[2];
+	public int practice1(int[] pobi, int[] crong) {
+		
 		int result = 0;
-
 		int suml = 0;
 		int mull = 1;
 		int sumr = 0;
@@ -94,7 +92,8 @@ public class pagingGame {
 		}else if(pobiscore == crongscore) {
 			result = 0;
 		}
-		System.out.println(result);
+		//System.out.println(result);
+		return result;
 	}
 
 }
