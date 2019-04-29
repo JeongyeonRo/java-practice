@@ -1,11 +1,11 @@
-package practice;
+package PagingGame;
 
 import java.util.Arrays;
 
 public class pobi {
 
 	public static void main(String[] args) {
-		int[] pobi = {131, 133};
+		int[] pobi = {131, 132};
 		int suml = 0;
 		int mull = 1;
 		int sumr = 0;
