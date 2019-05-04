@@ -1,0 +1,17 @@
+.register_login{
+	border: 2px solid LightCoral;
+	border-radius: 15px;
+	background-color: LightCoral;
+	padding: 15px 60px;
+	text-decoration:none;
+}
+
+.register_find{
+	font-size: 8px;
+	color:grey;
+}
+
+.register_register{
+	font-size: 90%
+}
+

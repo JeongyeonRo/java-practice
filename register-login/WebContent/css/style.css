@@ -1,0 +1,10 @@
+@import "header.css";
+@import "register.css";
+
+*{
+	margin: 10px 5px;
+}
+
+a{
+	text-decoration: none;
+}
