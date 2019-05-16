@@ -7,6 +7,11 @@
 <title>Login Page</title>
 </head>
 <body>
-login
+	<div>
+		<input type="text" placeholder="아이디"><br />
+		<input type="text" placeholder="비밀번호"><br />
+		<input type="submit" value="로그인">
+		
+	</div>
 </body>
 </html>
