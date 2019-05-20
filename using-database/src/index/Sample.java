@@ -1,13 +1,13 @@
 package index;
 
-//¿©·¯°³ÀÇ µ¥ÀÌÅÍ¸¦ ¹­¾î¼­ ÇÏ³ª·Î Ç¥ÇöÇÏ±â À§ÇÑ DTO Å¬·¡½º¸¦ »ı¼º
-//DTO(Data Transfer Object) = VO(Variable Object)
-public class Product {
-	//Product Å¬·¡½º ³»ºÎ¿¡¼­¸¸ Á¢±Ù°¡´ÉÇÑ º¯¼ö ¼³Á¤
+//ì—¬ëŸ¬ê°œì˜ ë°ì´í„°ë¥¼ ë¬¶ì–´ì„œ í•˜ë‚˜ë¡œ í‘œí˜„í•˜ê¸° ìœ„í•œ DTO í´ë˜ìŠ¤ë¥¼ ìƒì„±
+//DTO(Data Transfer Object):ì „ì†¡ã…‡ = VO(Variable Object):ì½ê¸°ìš©
+public class Sample {
+	//Product í´ë˜ìŠ¤ ë‚´ë¶€ì—ì„œë§Œ ì ‘ê·¼ê°€ëŠ¥í•œ ë³€ìˆ˜ ì„¤ì •
 	private int num;
 	private String name;
 	private int price;
-	//¿ÜºÎ¿¡¼­ µ¥ÀÌÅÍ¸¦ »ç¿ëÇÒ ¼ö ÀÖµµ·Ï getter, setter ¼³Á¤
+	//ì™¸ë¶€ì—ì„œ ë°ì´í„°ë¥¼ ì‚¬ìš©í•  ìˆ˜ ìˆë„ë¡ getter, setter ì„¤ì •
 	public int getNum() {
 		return num;
 	}
@@ -36,7 +36,5 @@ public class Product {
 	public String toString() {
 		return "Product [num=" + num + ", name=" + name + ", price=" + price + "]";
 	}
-	
-	
-
 }
+	
