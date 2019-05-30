@@ -1,0 +1,40 @@
+header{
+	background-color:#8DB39C;
+	text-align:center;
+	padding: 10px 0px;
+	font-size: 25px;
+}
+
+nav{
+	padding: 5px 0px;
+	background-color:#EDD5FF;
+	
+}
+
+body{
+	background-color:#E3FFEE;
+}
+
+
+h3{
+	text-align:center;
+}
+
+.main{
+	background-color:red;
+	justify-content:center;
+}
+
+table, th, td{
+	border: 1px solid black;
+}
+
+footer{
+	position:fixed;
+	display: inline;
+	background-color:#CCBCA1;
+	text-align:center;
+	bottom:0;
+	width:100%;
+	padding: 10px 0px;
+}
