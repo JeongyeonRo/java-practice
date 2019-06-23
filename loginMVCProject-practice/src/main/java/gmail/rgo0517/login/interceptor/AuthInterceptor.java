@@ -10,6 +10,7 @@ import org.springframework.web.servlet.HandlerInterceptor;
 public class AuthInterceptor implements HandlerInterceptor {
 	//Controller가 요청을 처리하기 전에 호출되는 메소드
 	//이 메소드가 true - Controller가 요청을 처리/ false - 요청을 처리하지 않음
+	@Override
 	public boolean preHandle(HttpServletRequest request,
 			HttpServletResponse response,
 			Object handler) {

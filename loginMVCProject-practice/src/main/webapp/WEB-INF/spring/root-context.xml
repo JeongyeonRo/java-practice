@@ -2,8 +2,8 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
-
-	<!-- 데이터베이스 접속을 위한 정보 설정 -->
+<!-- 모든 곳에서 사용할 수 있는 객체를 생성하는 코드를 가지고 잇는 파일 -->
+ <!-- 데이터베이스 접속을 위한 정보 설정 -->
 	<bean
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
 		id="dataSource">
@@ -11,16 +11,17 @@
 			name="driverClassName" />
 		<property value="jdbc:oracle:thin:@localhost:1521:xe"
 			name="url" />
-		<property value="system" name="username" />
+		<property value="System" name="username" />
 		<property value="0000" name="password" />
 	</bean>
 
+	<!-- MyBatis 설정 -->
 	<bean class="org.mybatis.spring.SqlSessionFactoryBean"
 		id="sqlSessionFactory">
 		<property name="dataSource" ref="dataSource" />
-		<property value="/resources/mybatis/mybatis-config.xml"
+		<property value="classpath:/resources/mybatis/mybatis-config.xml"
 			name="configLocation" />
-		<property value="/resources/mybatis/mappers/*.xml"
+		<property value="classpath:/resources/mybatis/mappers/*.xml"
 			name="mapperLocations" />
 	</bean>
 	<bean class="org.mybatis.spring.SqlSessionTemplate"
@@ -28,5 +29,6 @@
 		<constructor-arg name="sqlSessionFactory"
 			ref="sqlSessionFactory" />
 	</bean>
-
+	
+	
 </beans>

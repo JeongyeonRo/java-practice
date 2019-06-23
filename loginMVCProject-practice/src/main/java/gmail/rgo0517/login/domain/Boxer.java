@@ -1,21 +1,21 @@
 package gmail.rgo0517.login.domain;
 
 public class Boxer {
-	private String id;
-	private String pw;
+	private String userid;
+	private String userpw;
 	private String username;
 	private String nickname;
-	public String getId() {
-		return id;
+	public String getUserid() {
+		return userid;
 	}
-	public void setId(String id) {
-		this.id = id;
+	public void setUserid(String userid) {
+		this.userid = userid;
 	}
-	public String getPw() {
-		return pw;
+	public String getUserpw() {
+		return userpw;
 	}
-	public void setPw(String pw) {
-		this.pw = pw;
+	public void setUserpw(String userpw) {
+		this.userpw = userpw;
 	}
 	public String getUsername() {
 		return username;
@@ -31,6 +31,9 @@ public class Boxer {
 	}
 	@Override
 	public String toString() {
-		return "Boxer [id=" + id + ", pw=" + pw + ", username=" + username + ", nickname=" + nickname + "]";
+		return "Boxer [userid=" + userid + ", userpw=" + userpw + ", username=" + username + ", nickname=" + nickname
+				+ "]";
 	}
+	
+	
 }

@@ -9,6 +9,7 @@
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
+	<!-- 자주 사용하는 속성의 값을 하나의 프로퍼티로 설정해 놓은 태그 -->
 		<java-version>1.8</java-version>
 		<org.springframework-version>5.0.7.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
@@ -16,50 +17,51 @@
 	</properties>
 
 	<repositories>
+	<!-- 라디르버리를 다운로드 받는 저장소 경로
+	별도로 설정하지 않을 경우 Maven Central Repository에서 다운로드 -->
 		<repository>
 			<id>codelds</id>
 			<url>https://code.lds.org/nexus/content/groups/main-repo</url>
 		</repository>
 	</repositories>
 
-
 	<dependencies>
-
-		<!-- oracle: 연동하고자 하는 데이터베이스 -->
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>11.2.0.3</version>
-		</dependency>
-		<!-- spring-jdbc: spring에서 데이터베이스를 사용할 때 필수 -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-jdbc</artifactId>
-			<version>${org.springframework-version}</version>
-		</dependency>
-		<!-- spring-test: junit을 이용해서 테스트할 때 필수 -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>${org.springframework-version}</version>
-		</dependency>
-		<!-- log4jdbc: 데이터베이스 작업 시 로그 출력을 자세히 하기 위해서 사용하는 라이브러리 -->
+	<!-- 실제 사용할 라이브러리의 의존성을 설정 -->
 		<dependency>
 			<groupId>org.bgee.log4jdbc-log4j2</groupId>
 			<artifactId>log4jdbc-log4j2-jdbc4</artifactId>
 			<version>1.16</version>
 		</dependency>
-		<!-- MyBatis: Sql Mapper Framwork -->
+
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
 			<version>3.4.6</version>
 		</dependency>
-		<!-- mybatis-spring: MyBatis를 Spring에서 사용하기 위함 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 			<version>1.3.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.8</version>
 		</dependency>
 		<!-- Spring -->
 		<dependency>

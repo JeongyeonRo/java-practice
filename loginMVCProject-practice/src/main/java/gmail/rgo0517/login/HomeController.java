@@ -21,8 +21,8 @@ public class HomeController {
 		return "home";
 	}
 	@RequestMapping(value = "login", method = RequestMethod.GET)
-	public String login(Locale locale, Model model) {		
-		return "login";
+	public String login() {		
+		return "redirect:login";
 	}
 	@Autowired
 	private BoxerDao boxerDao;
@@ -31,10 +31,11 @@ public class HomeController {
 		//login 처리 메소드를 호출
 		Boxer result = boxerDao.login(boxer);
 		//로그인 성공
+		System.out.println("result:" + result);
 		if(result != null) {
 			//세션에 로그인 정보를 저장
 			session.setAttribute("user",result);
-			return "redirect:home";
+			return "redirect:./";
 		}else {
 			//로그인이 되지 않은 경우
 			return "redirect:login";
@@ -43,6 +44,11 @@ public class HomeController {
 	@RequestMapping(value = "more", method = RequestMethod.GET)
 	public String more(Locale locale, Model model) {		
 		return "more";
+	}
+	@RequestMapping(value = "logout", method = RequestMethod.POST)
+	public String logout(Locale locale, Model model, HttpSession session) {
+	session.invalidate();
+	return "redirect:./";
 	}
 	
 }
