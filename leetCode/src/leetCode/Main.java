@@ -11,7 +11,15 @@ public class Main {
 				"numJewelsInStones1 : " + js.numJewelsInStones("aA","aAAbbbb"));
 		System.out.println(
 				"numJewelsInStones2 : " + js.numJewelsInStones("z","ZZ"));
-
+		
+		//709. ToLowerCase
+		ToLowerCaseTest tlc = new ToLowerCaseTest();
+		
+		System.out.println(
+				"Output : " + tlc.toLowerCase("Hello Java"));
+		System.out.println(
+				"Output : " + tlc.toLowerCase("Here"));
+		
 
 	}
 }
