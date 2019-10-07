@@ -23,10 +23,18 @@ public class snailArray {
 		//배열 A[5][5] 출력
 		for(i=0; i<5; i++) {
 			for(j=0;j<5;j++) {
-				System.out.print(A[i][j]);
+				System.out.print(A[i][j]+"\t");
 			}
+			//줄바꿈
 			System.out.println();
 		}
+		
+		//출력값
+//		1	2	3	4	5	
+//		16	17	18	19	6	
+//		15	24	25	20	7	
+//		14	23	22	21	8	
+//		13	12	11	10	9
 
 	}
 
