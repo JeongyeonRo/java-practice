@@ -11,7 +11,7 @@
 	<properties>
 	<!-- 자주 사용하는 속성의 값을 하나의 프로퍼티로 설정해 놓은 태그 -->
 		<java-version>1.8</java-version>
-		<org.springframework-version>5.0.7.RELEASE</org.springframework-version>
+		<org.springframework-version>5.3.18</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
